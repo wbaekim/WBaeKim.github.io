@@ -1,83 +1,89 @@
-/* Reset default styles */
-* {
-  box-sizing: border-box;
+/* Body */
+body {
   margin: 0;
   padding: 0;
-}
-
-/* Body styles */
-body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
   color: #333;
-  background-color: #f2f2f2;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-/* Header styles */
+/* Header */
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 80px;
+  padding: 0 30px;
+  background-color: #333;
+  color: #fff;
 }
 
-header h1 {
-  font-size: 2rem;
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30px;
 }
 
 nav ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
 }
 
-nav li {
-  margin-left: 20px;
+nav ul li {
+  margin-left: 10px;
 }
 
-nav a {
+nav ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.2rem;
-  transition: color 0.2s ease-in-out;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-nav a:hover {
-  color: #ccc;
-}
-
-/* Main styles */
-main {
-  padding: 20px;
-}
-
-section {
-  margin-bottom: 40px;
-}
-
-h2 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 10px;
-}
-
-a {
+nav ul li a:hover {
+  background-color: #fff;
   color: #333;
-  text-decoration: none;
-  font-size: 1.1rem;
-  transition: color 0.2s ease-in-out;
+  transition: all 0.3s ease;
 }
 
-a:hover {
-  color: #666;
+/* Main Content */
+main {
+  margin: 30px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  flex-grow: 1;
 }
 
+h1 {
+  margin-top: 0;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  flex-shrink: 0;
+}
